@@ -67,7 +67,6 @@ export function beforeRegistration(Vue, config, store, isServer) {
   Vue.prototype.$storyapi = new StoryblokClient({
     accessToken: config.storyblok.accessToken
   })
-  
 
   // load js bridge on draft mode
   if (!isServer && config.storyblok.version === 'draft') {
